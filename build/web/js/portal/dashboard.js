@@ -76,7 +76,9 @@ function revenueGenerationStatisticsPie(){
 							        ],
 							        type : type
 							    },
-							    pie: { title },
+							    pie: { 
+                                                                title 
+                                                            },
 							    tooltip: {
 						    	  format: {
 						    	    value: function (value, ratio, id, index) { return "N "+formatNumberAsCurrency(value); }

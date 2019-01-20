@@ -98,7 +98,7 @@ $(document).ready(function(){
 					    tooltip: {
 				    	  format: {
 				    	    value: function (value, ratio, id, index) { return "N "+formatNumberAsCurrency(value); }
-				    	  }
+				    	     }
 					    }
 					});
 				})();
