@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<title>ONDODASHBOARD | HOME</title>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<style type="text/css">
+			.dashboard-header{
+				font-size: 20px;
+				color: white;
+				/* font-family: cursive; */
+			}
+
+			.modal{
+				background: rgba(0,0,0,.7);
+			}
+			/* On screens that are 600px wide or less */
+			@media screen and (max-width: 600px) {
+			    .dashboard-header {
+			        font-size: 12px;
+			    }
+			}
+		
+</style>
+<link rel="stylesheet" href="css/api/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/api/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" href="css/api/jquery-ui.1.11.4.css" />
+<link rel="stylesheet" href="css/api/bootstrap-dialog.min.css"/>
+<link rel="stylesheet" href="css/api/dataTables.bootstrap.min.css"/>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,200'/>
+<link rel="stylesheet" href="css/api/features-quick-link.css"/>
+<link rel="stylesheet" href="css/api/font-awesome-animation.min.css"/>
+<link rel="stylesheet" href="css/api/jquery.growl.css"/>
+
+<link rel="stylesheet" href="css/api/c3-0.6.7.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-slider-10.2.0.css"/>
+
+		<script type="text/javascript" src="js/api/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/jquery-ui.1.11.4.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-dialog.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.jeditable.mini.js"></script>
+<script type="text/javascript" src="js/api/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-filestyle.js"> </script>
+<script type="text/javascript" src="js/api/moment.min.js"> </script>
+<script type="text/javascript" src="js/api/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/api/jquery.growl.js"></script>
+<script type="text/javascript" src="js/api/notification.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay.min.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay_progress.min.js"></script>
+
+<script type="text/javascript" src="js/api/d3v5.js"></script>
+<script type="text/javascript" src="js/api/c3-0.6.7.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-slider-10.2.0.js"></script>
+<script type="text/javascript" src="js/portal/commonUtil.js"></script>
+<script type="text/javascript" src="js/portal/login.js"></script>
+
+
+	</head>
+	<body class="background-class">
+		<div class="container-fluid" style="position: fixed;width: 100%;z-index: 1001;">
+			<div class="row" style="padding: 10px;background-color: #b90d1e;">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5" id="">
+					<img class="img-responsive" alt="" src="images/ondo-login-logo.png" style="height: 54px; width: 125px;">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 text-center dashboard-header" id="">
+					<p style="margin: 0px;">EXECUTIVE REPORT MANAGER</p>
+					<p style="margin: 0px;">STATE OF ONDO</p>
+				</div>
+			</div>
+			
+		</div>
+		<div id="wrapper" class="">
+			<!-- ADDING A INCLUDESIDEBAR -->
+			
+<link rel="stylesheet" href="css/custom/includeSideBar.css"/>
+<div id="sidebar-wrapper" style="position: fixed;top: 76px;z-index: 0;">
+	<ul id="sidebar_menu" class="sidebar-nav">
+		<li class="sidebar-brand">
+			<a id="menu-toggle" href="#" style="padding: 7px 0px 14px 0px;">
+				<span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="sidebar-nav" id="sidebar" style="font-size:13px;background-color: #444450;width: 185px;/* font-family: cursive; */">
+		<li>
+			<a data-toggle="tooltip" title="Dashboard" class='' href="?key=dashboard">
+				Dashboard<span class="sub_icon glyphicon glyphicon-dashboard"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Statistics" class='' href="#<!-- ?key=statistics -->" style="cursor: no-drop;">
+				Statistics<span class="sub_icon glyphicon glyphicon-stats"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Tax Payer" class='active-side-bar' href="?key=taxpayer">
+				Tax Payer<span class="sub_icon glyphicon glyphicon-user"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Property" class='' href="?key=property">
+				Property<span class="sub_icon glyphicon glyphicon-home"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Reports" class='' href="#<!-- ?key=reports -->" style="cursor: no-drop;">
+				Reports<span class="sub_icon glyphicon glyphicon-file"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Help" class='' href="#<!-- ?key=help -->" style="cursor: no-drop;">
+				Help<span class="sub_icon glyphicon glyphicon-exclamation-sign"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Logout" href="/dashboard">
+				Logout<span class="sub_icon glyphicon glyphicon-off"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+			<!-- Page content -->
+			<div id="page-content-wrapper">
+				<!-- Keep all page content within the page-content inset div! -->
+				<div class="page-content inset" style="top: 65px;position: relative;/* z-index: -1; */padding: 10px;">
+					<div class="container-fluid" style="">
+						<!-- ADDING A PAGE INSIDE PAGE CONTENT -->
+						<style>
+::-webkit-input-placeholder {
+	text-align: center;
+}
+
+:-moz-placeholder { /* older Firefox*/
+	text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+}
+
+.btnDiv {
+	margin-left: 0px;
+}
+
+.btn {
+	border-radius: 0px !important;
+	border-color: transparent !important;
+}
+
+.modal-btn {
+	margin: 22px;
+	background-color: rgb(0, 201, 172);
+	width: 100px;
+}
+
+.modal-btn:hover{
+	background-color: rgb(68, 90, 111) !important;
+}
+
+.underline {
+	border-bottom: 1px solid rgb(0, 201, 172) !important;
+	text-align: left;
+}
+
+.btn-lg {
+	width: 265px;
+}
+
+table thead tr th{
+	text-align:center;
+}
+
+th {
+	border: 0px !important;
+}
+
+td {
+	border: 0px !important;
+}
+
+.taxpayerTabList li {
+	width: 25%;
+	margin-bottom: -2px !important;
+	border-bottom: 2px solid rgb(0, 201, 172) !important;
+	text-align: center !important;
+}
+
+.taxpayerTabList li a:hover {
+	background-color: #a2efcf !important;
+}
+
+.taxpayerTabList li a {
+	color: white !important;
+	border-radius: 0px !important;
+	margin-right: 0px !important;
+}
+
+.taxpayerTabList li.active a {
+	color: white !important;
+	background-color: rgb(0, 201, 172) !important;
+	border: 0px !important;
+	border-bottom: 2px solid rgb(0, 201, 172) !important;
+}
+
+.modal-bg {
+	background-image: url('images/Background.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed;   */
+	webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* position: absolute; */
+	width: 100%;
+}
+
+.custom_label {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.tab-custom-col{
+	width:245px;
+	padding-left:70px !important; 
+}
+
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 40px;
+    margin-left: -50%;
+    margin-top: -25px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #337ab7;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(25%, rgba(255,255,255,0.9)), color-stop(75%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+}
+</style>
+<div class="container-fluid">
+	<div class="row" style="margin-top: 10px;">
+		<div class="col-md-8">
+			<p  style="font-family: sans-serif; font-weight: 700; font-size: 12px;border: 1px solid #444450; padding: 2px;color:#444450;display: inline-block;">
+				Statistics
+			</p>
+		</div>
+		
+	</div>
+	
+
+	
+	<div id="taxPayerTableContainer" class="well well-lg custom-well" style="padding: 20px;display: block;">
+		<div id="" >
+			<div class="row" style="margin-top: 10px;">
+				<div>
+					<p style="font-family: sans-serif; font-weight: 700; font-size: 12px;border: 1px solid #444450; padding: 2px;color:#444450;display: inline-block;">
+						Search Result
+					</p>
+				</div>
+				<div class="col-md-12 table-responsive">
+					<table class="table table-bordered table-hover" id="taxPayerTable" style="margin: 12px;">
+						<thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+							class="" align="center">
+							<tr>
+								<th>Payer ID</th>
+								<th>Name</th>
+								<th>ORIN</th>
+								<th>Birth Date</th>
+								<th>Reg. Date</th>
+								<th>Phone</th>
+								<th>Email</th>
+								<!-- <th>Amount Due</th> -->
+								<th></th>
+							</tr>
+						</thead>
+						<tbody align="center" style="font-size: 12px; background-color: white;">
+							<tr>
+								<td>121</td>
+								<td>Saket Arora</td>
+								<td>000012231334343</td>
+								<td>19-10-93</td>
+								<td>01-09-18</td>
+								<td>07735646519</td>
+								<td>saketa@esspl.com</td>
+								<td>50000</td>
+								<td>
+							 <span class="glyphicon glyphicon-folder-open openModal" data="1" style="color: #337ab7;">
+									
+								</span>
+							    </td>
+							</tr>
+
+							<tr>
+								<td>121</td>
+								<td>Saket Arora</td>
+								<td>000012231334343</td>
+								<td>19-10-93</td>
+								<td>01-09-18</td>
+								<td>07735646519</td>
+								<td>saketa@esspl.com</td>
+								<td>50000</td>
+								<td>
+							 <span class="glyphicon glyphicon-folder-open openModal" data="2" style="color: #337ab7;">
+									
+								</span>
+							    </td>
+							</tr>
+
+							
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+</div>
+
+
+<div class="col-md-12">
+			<div role="tabpanel">
+							<!-- Nav tabs -->
+							<div class="row" id="taxpayerTabPanelContainer">
+								<div class="col-md-offset-1 col-md-10">
+									<ul class="nav nav-tabs taxpayerTabList" role="tablist" style="background-color: rgb(68, 90, 111);">
+										<li role="presentation" class="active">
+											<a href="#detailTab" aria-controls="detailTab" role="tab" data-toggle="tab">Important Details</a>
+										</li>
+										<li role="presentation">
+											<a href="#property" aria-controls="property" role="tab" data-toggle="tab" id="propertyTab" payerId="">Property</a>
+										</li>
+										<li role="presentation">
+											<a href="#taxFolder" aria-controls="taxFolder" role="tab" data-toggle="tab" id="taxFoldersTab" payerId="">Tax Folders</a>
+										</li>
+										<li role="presentation">
+											<a href="#paymentHistory" aria-controls="paymentHistory" role="tab" data-toggle="tab" id="paymentHistoryTab" payerId="">Payment History</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="detailTab">
+									<div class="row" id="importantDetailsContainer">
+										<div class="col-md-offset-1 col-md-10">
+											<div class="pull-right hide" style="display: inline-block;display: inline-block;padding: 15px 20px 15px 20px; 
+												border: 2px solid #00c9ac;background: white;font-weight: 700;">
+												Debt <p>12344455</p>
+											</div>
+											<table class="table table-hover" id="taxPayerTable">
+												<tbody style="background-color: white;">
+													<tr>
+														<td class="tab-custom-col" style="font-weight: 700">Debt</td>
+														<td class="underline" style="font-weight: 700;color: #b90d1e;"><span id="amountDue"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Payer ID</td>
+														<td class="underline"><span id="payerId"></span></td>
+														<!-- <td class="underline"><span id="payerId">sasa</span></td> -->
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Name</td>
+														<td class="underline"><span id="payerName"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Organization</td>
+														<td class="underline"><span id="organization"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Type</td>
+														<td class="underline"><span id="payerType"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Phone</td>
+														<td class="underline"><span id="phonenumber"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Email</td>
+														<td class="underline"><span id="email"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Address</td>
+														<td class="underline"><span id="address"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Date of Birth</td>
+														<td class="underline"><span id="dob"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">ORIN</td>
+														<td class="underline"><span id="orin"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">TIN</td>
+														<td class="underline"><span id="tin"></span></td>
+													</tr>
+													<tr>
+														<td class="tab-custom-col">Date of Registration</td>
+														<td class="underline"><span id="dateOfRegistration"></span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+												<button class="btn btn-primary modal-btn"
+													id="addItemUpdateSaveBtn">Close</button>
+												<button class="btn btn-primary modal-btn"
+													id="printReportBtn">Print Profile</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="property">
+									<div class="row" style="margin-top:25px">
+										<div class="col-md-12">
+											<table class="table table-bordered table-hover" id="taxPayerPropertiesDetailTable" style="background-color: #FEFFFE;">
+												<thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+													class="" align="center">
+													<tr>
+														<th>Property ID</th>
+														<th>Type</th>
+														<th>Address</th>
+														<th>City</th>
+														<th>Value</th>
+														<th>Area</th>
+														<th>Property RSN</th>
+														<th>Area Class</th>
+														<th>Land Usage</th>
+														<th>Amount 17</th>
+														<th>Amount 18</th>
+													</tr>
+												</thead>
+												<tbody align="center" style="font-size: 12px; background-color: white;">
+												
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+												<button class="btn btn-primary modal-btn"
+													id="addItemUpdateSaveBtn">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane" id="taxFolder">
+									<div class="row" style="margin-top:25px">
+										<div class="col-md-12">
+											<table class="table table-bordered table-hover" id="taxPayerFolderDetailTable" style="background-color: #FEFFFE;">
+												<thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+													class="" align="center">
+													<tr>
+														<th>Folder ID</th>
+														<th>Date Created</th>
+														<th>Type</th>
+														<th>Sub Type</th>
+														<th>Amount Billed</th>
+														<th>Amount Paid</th>
+														<th>Amount Due</th>
+													</tr>
+												</thead>
+												<tbody align="center" style="font-size: 12px; background-color: white;">
+												
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+												<button class="btn btn-primary modal-btn"
+													id="addItemUpdateSaveBtn">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="paymentHistory">
+									<div class="row" style="margin-top:25px">
+										<div class="col-md-12">
+											<table class="table table-bordered table-hover" id="taxPayerPaymentHistoryTable" style="background-color: #FEFFFE;">
+												<thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+													class="" align="center">
+													<tr>
+														<th>Payment Number</th>
+														<th>Payment Date</th>
+														<th>Payment Mode</th>
+														<th>Payment Amount</th>
+														<th>Bank</th>
+														<th>Receipt Number</th>
+														<th>Paid By</th>
+													</tr>
+												</thead>
+												<tbody  align="center" style="font-size: 12px; background-color: white;">
+												
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+												<button class="btn btn-primary modal-btn"
+													id="addItemUpdateSaveBtn">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+			
+		<div class="modal-footer" style="background-color: rgb(68, 68, 80); padding: 8px; text-align: center;border-top: 0px;">
+      	</div>
+			
+	</div>
+</div>
+
+<!-- ADDING RESPECTIVE JS FILES -->
+<script type="text/javascript" src="js/portal/taxpayer.js"></script>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#menu-toggle").click(function(e) {
+		    e.preventDefault();
+		    $("#wrapper").toggleClass("active");
+		});
+	</script>
+</html>

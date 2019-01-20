@@ -1,0 +1,372 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<title>ONDODASHBOARD | HOME</title>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<style type="text/css">
+			.dashboard-header{
+				font-size: 20px;
+				color: white;
+				/* font-family: cursive; */
+			}
+			/* On screens that are 600px wide or less */
+			@media screen and (max-width: 600px) {
+			    .dashboard-header {
+			        font-size: 12px;
+			    }
+			}
+		
+		</style>
+		<link rel="stylesheet" href="css/api/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/api/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" href="css/api/jquery-ui.1.11.4.css" />
+<link rel="stylesheet" href="css/api/bootstrap-dialog.min.css"/>
+<link rel="stylesheet" href="css/api/dataTables.bootstrap.min.css"/>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,200'/>
+<link rel="stylesheet" href="css/api/features-quick-link.css"/>
+<link rel="stylesheet" href="css/api/font-awesome-animation.min.css"/>
+<link rel="stylesheet" href="css/api/jquery.growl.css"/>
+
+<link rel="stylesheet" href="css/api/c3-0.6.7.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-slider-10.2.0.css"/>
+
+		<script type="text/javascript" src="js/api/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/jquery-ui.1.11.4.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-dialog.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.jeditable.mini.js"></script>
+<script type="text/javascript" src="js/api/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-filestyle.js"> </script>
+<script type="text/javascript" src="js/api/moment.min.js"> </script>
+<script type="text/javascript" src="js/api/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/api/jquery.growl.js"></script>
+<script type="text/javascript" src="js/api/notification.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay.min.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay_progress.min.js"></script>
+
+<script type="text/javascript" src="js/api/d3v5.js"></script>
+<script type="text/javascript" src="js/api/c3-0.6.7.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-slider-10.2.0.js"></script>
+<script type="text/javascript" src="js/portal/commonUtil.js"></script>
+<script type="text/javascript" src="js/portal/login.js"></script>
+
+
+	</head>
+	<body class="background-class">
+		<div class="container-fluid" style="position: fixed;width: 100%;z-index: 1001;">
+			<div class="row" style="padding: 10px;background-color: #b90d1e;">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5" id="">
+					<img class="img-responsive" alt="" src="images/ondo-login-logo.png" style="height: 54px; width: 125px;">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 text-center dashboard-header" id="">
+					<p style="margin: 0px;">EXECUTIVE REPORT MANAGER</p>
+					<p style="margin: 0px;">STATE OF ONDO</p>
+				</div>
+			</div>
+			
+		</div>
+		<div id="wrapper" class="">
+			<!-- ADDING A INCLUDESIDEBAR -->
+			
+<link rel="stylesheet" href="css/custom/includeSideBar.css"/>
+<div id="sidebar-wrapper" style="position: fixed;top: 76px;z-index: 0;">
+	<ul id="sidebar_menu" class="sidebar-nav">
+		<li class="sidebar-brand">
+			<a id="menu-toggle" href="#" style="padding: 7px 0px 14px 0px;">
+				<span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="sidebar-nav" id="sidebar" style="font-size:13px;background-color: #444450;width: 185px;/* font-family: cursive; */">
+		<li>
+			<a data-toggle="tooltip" title="Dashboard" class='' href="?key=dashboard">
+				Dashboard<span class="sub_icon glyphicon glyphicon-dashboard"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Statistics" class='' href="#<!-- ?key=statistics -->" style="cursor: no-drop;">
+				Statistics<span class="sub_icon glyphicon glyphicon-stats"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Tax Payer" class='' href="?key=taxpayer">
+				Tax Payer<span class="sub_icon glyphicon glyphicon-user"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Property" class='active-side-bar' href="?key=property">
+				Property<span class="sub_icon glyphicon glyphicon-home"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Reports" class='' href="#<!-- ?key=reports -->" style="cursor: no-drop;">
+				Reports<span class="sub_icon glyphicon glyphicon-file"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Help" class='' href="#<!-- ?key=help -->" style="cursor: no-drop;">
+				Help<span class="sub_icon glyphicon glyphicon-exclamation-sign"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Logout" href="/dashboard">
+				Logout<span class="sub_icon glyphicon glyphicon-off"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+			<!-- Page content -->
+			<div id="page-content-wrapper">
+				<!-- Keep all page content within the page-content inset div! -->
+				<div class="page-content inset" style="top: 65px;position: relative;/* z-index: -1; */padding: 10px;">
+					<div class="container-fluid" style="">
+						<!-- ADDING A PAGE INSIDE PAGE CONTENT -->
+						<style>
+::-webkit-input-placeholder {
+	text-align: center;
+}
+
+:-moz-placeholder { /* older Firefox*/
+	text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+}
+
+.ui-widget-header {
+	background: rgb(0, 201, 172) !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+	background: rgb(68, 90, 111) !important;
+}
+
+.ui-widget-content {
+background: rgb(166,166,166);
+}
+
+.custom-li {
+	width: 25%;
+	margin-bottom: -2px !important;
+	border-bottom: 2px solid rgb(0, 201, 172) !important;
+	text-align: center !important;
+}
+
+.custom-li a:hover {
+	background-color: #a2efcf !important;
+}
+
+.custom-li a {
+	color: white !important;
+	border-radius: 0px !important;
+	margin-right: 0px !important;
+}
+
+.custom-li.active a {
+	color: white !important;
+	background-color: rgb(0, 201, 172) !important;
+	border: 0px !important;
+	border-bottom: 2px solid rgb(0, 201, 172) !important;
+}
+
+.cust-li {
+	width: 195px;
+	border: 0px !important;
+	text-align: center !important;
+}
+
+.cust-li a:hover {
+	background-color: transparent !important;
+	border: 0px !important;
+}
+
+.cust-li a {
+	color: white !important;
+	border-radius: 0px !important;
+	margin-right: 0px !important;
+	border: 0px !important;
+}
+
+.cust-li.active a {
+	color: white !important;
+	background-color: transparent !important;
+	border: 0px !important;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 28px;
+	width: 34px;
+	background-color: #2196F3;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #ccc;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(42px);
+	-ms-transform: translateX(42px);
+	transform: translateX(42px);
+}
+
+.square {
+	background: white;
+	width: 20vw;
+	height: 8vw;
+}
+.cust-in{
+    margin-top:20px;
+    margin-left: 15px;
+}
+
+.nav-tabs-custom>li{
+	float: none;
+	margin-bottom: 20px;
+}
+
+</style>
+<div class="row">
+	<div class="col-md-12">
+		<div role="tabpanel" style="padding: 10px;">
+			<!-- Nav tabs -->
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav nav-tabs" role="tablist"
+						style="background-color: rgb(68, 68, 80);">
+						<li role="presentation" class="active custom-li"><a
+							href="#landUseTab" aria-controls="landUseTab" role="tab"
+							data-toggle="tab">Budget</a>
+						</li>
+						<li role="presentation" class="custom-li"><a
+							href="#landUseRevenueTab" aria-controls="landUseRevenueTab"
+							role="tab" data-toggle="tab">Revenue</a>
+						</li>
+						<li role="presentation" class="custom-li"><a
+							href="#landUseRevenueTab" aria-controls="landUseRevenueTab"
+							role="tab" data-toggle="tab">Location</a>
+						</li>
+						<li role="presentation" class="custom-li"><a
+							href="#landUseRevenueTab" aria-controls="landUseRevenueTab"
+							role="tab" data-toggle="tab">Banks</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="landUseTab">
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-md-9">
+							<h4 id="graphHeader">BUDGET AND REVENUE STATISTICS</h4>
+						</div>
+						
+					</div>
+					
+					<div class="row" style="margin-top: 10px;">
+						
+						<div class="col-md-6">
+								<ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+									<li role="presentation" class="cust-li"
+										style="background-color: #204d74;"><a href="#landUseTab"
+										aria-controls="landUseTab" role="tab" data-toggle="tab">
+										Budget Analysis<br> <span>Report</span>
+									</a>
+								    </li>
+
+								    <li role="presentation" class="cust-li"
+										style="background-color: #204d74;"><a href="#landUseTab"
+										aria-controls="landUseTab" role="tab" data-toggle="tab">
+											Budget-Revenue Analysis<br> <span>Report</span>
+									</a>
+								    </li>
+
+								    <li role="presentation" class="cust-li"
+										style="background-color: #204d74;"><a href="#landUseTab"
+										aria-controls="landUseTab" role="tab" data-toggle="tab">Budget-Performance<br> <span>Ranking</span>
+									</a>
+								    </li>
+
+
+									
+								</ul>
+							</div>
+						
+					</div>
+					
+					
+				</div>  <!--End LandUseTab -->
+
+
+		</div>
+
+
+	</div>
+</div>
+<!-- ADDING RESPECTIVE JS FILES -->
+<script type="text/javascript" src="js/portal/property.js"></script>
+
+</div>
+</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#menu-toggle").click(function(e) {
+		    e.preventDefault();
+		    $("#wrapper").toggleClass("active");
+		});
+	</script>
+</html>

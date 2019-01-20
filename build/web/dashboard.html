@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<title>ONDODASHBOARD | HOME</title>
+		<style type="text/css">
+			.dashboard-header{
+				font-size: 20px;
+				color: white;
+				/* font-family: cursive; */
+			}
+			/* On screens that are 600px wide or less */
+			@media screen and (max-width: 600px) {
+			    .dashboard-header {
+			        font-size: 12px;
+			    }
+			}
+</style>
+
+<link rel="stylesheet" href="css/api/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/api/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" href="css/api/jquery-ui.1.11.4.css" />
+<link rel="stylesheet" href="css/api/bootstrap-dialog.min.css"/>
+<link rel="stylesheet" href="css/api/dataTables.bootstrap.min.css"/>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,200'/>
+<link rel="stylesheet" href="css/api/features-quick-link.css"/>
+<link rel="stylesheet" href="css/api/font-awesome-animation.min.css"/>
+<link rel="stylesheet" href="css/api/jquery.growl.css"/>
+
+<link rel="stylesheet" href="css/api/c3-0.6.7.css"/>
+<link rel="stylesheet" href="css/api/bootstrap-slider-10.2.0.css"/>
+<script type="text/javascript" src="js/api/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/jquery-ui.1.11.4.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-dialog.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.jeditable.mini.js"></script>
+<script type="text/javascript" src="js/api/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-filestyle.js"> </script>
+<script type="text/javascript" src="js/api/moment.min.js"> </script>
+<script type="text/javascript" src="js/api/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/api/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/api/jquery.growl.js"></script>
+<script type="text/javascript" src="js/api/notification.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay.min.js"></script>
+<script type="text/javascript" src="js/api/loadingoverlay_progress.min.js"></script>
+
+<script type="text/javascript" src="js/api/d3v5.js"></script>
+<script type="text/javascript" src="js/api/c3-0.6.7.js"></script>
+<script type="text/javascript" src="js/api/bootstrap-slider-10.2.0.js"></script>
+<script type="text/javascript" src="js/portal/commonUtil.js"></script>
+<script type="text/javascript" src="js/portal/login.js"></script>
+
+
+	</head>
+	<body class="background-class">
+		<div class="container-fluid" style="position: fixed;width: 100%;z-index: 1001;">
+			<div class="row" style="padding: 10px;background-color: #b90d1e;">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5" id="">
+					<img class="img-responsive" alt="" src="images/ondo-login-logo.png" style="height: 54px; width: 125px;">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 text-center dashboard-header" id="">
+					<p style="margin: 0px;">EXECUTIVE REPORT MANAGER</p>
+					<p style="margin: 0px;">STATE OF ONDO</p>
+				</div>
+			</div>
+			
+		</div>
+		<div id="wrapper" class="">
+			<!-- ADDING A INCLUDESIDEBAR -->
+			
+<link rel="stylesheet" href="css/custom/includeSideBar.css"/>
+<div id="sidebar-wrapper" style="position: fixed;top: 76px;z-index: 0;">
+	<ul id="sidebar_menu" class="sidebar-nav">
+		<li class="sidebar-brand">
+			<a id="menu-toggle" href="#" style="padding: 7px 0px 14px 0px;">
+				<span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="sidebar-nav" id="sidebar" style="font-size:13px;background-color: #444450;width: 185px;/* font-family: cursive; */">
+		<li>
+			<a data-toggle="tooltip" title="Dashboard" class='active-side-bar' href="?key=dashboard">
+				Dashboard<span class="sub_icon glyphicon glyphicon-dashboard"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Statistics" class='' href="#<!-- ?key=statistics -->" style="cursor: no-drop;">
+				Statistics<span class="sub_icon glyphicon glyphicon-stats"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Tax Payer" class='' href="?key=taxpayer">
+				Tax Payer<span class="sub_icon glyphicon glyphicon-user"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Property" class='' href="?key=property">
+				Property<span class="sub_icon glyphicon glyphicon-home"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Reports" class='' href="#<!-- ?key=reports -->" style="cursor: no-drop;">
+				Reports<span class="sub_icon glyphicon glyphicon-file"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Help" class='' href="#<!-- ?key=help -->" style="cursor: no-drop;">
+				Help<span class="sub_icon glyphicon glyphicon-exclamation-sign"></span>
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tooltip" title="Logout" href="/dashboard">
+				Logout<span class="sub_icon glyphicon glyphicon-off"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+			<!-- Page content -->
+			<div id="page-content-wrapper">
+				<!-- Keep all page content within the page-content inset div! -->
+				<div class="page-content inset" style="top: 65px;position: relative;/* z-index: -1; */padding: 10px;">
+					<div class="container-fluid" style="">
+						<!-- ADDING A PAGE INSIDE PAGE CONTENT -->
+						<div class="container-fluid" style="margin: 5px;">
+	<!-- <div class="" id="userDetailsContainer">
+		<div class="row vertical-center">
+			<div class="col-lg-10 text-center">
+				<div style="font-family: sans-serif;display: inline-block;" class="text-left">
+					<p style="margin: 0px;font-size: 20px;font-family: cursive;">Welcome</p>
+					<p style="margin: 0px;font-size: 40px;">Adebukola Ademola</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="" id="dashboardContainer" style="display: block;margin-top: 5px;">
+		<div class="row">
+			<div class="col-lg-2 col-md-2" style="margin: 0px; padding: 5px;">
+		  		<div class="row">
+		  			<div class="col-lg-12 col-md-12">
+		  				<div class="well custom-well text-center" style="background-color: #2e75b6;border: 1px solid #2e75b6;color: white; height: 129px;">
+							<p>Tax Payer Count</p>
+							<p style="font-family: monospace;font-size: 30px;" id="taxPayerCount">768, 900</p>
+						</div>
+		  			</div>
+		  		</div>
+		  		<div class="row">
+		  			<div class="col-lg-12 col-md-12">
+		  				<div class="well custom-well text-center" 
+		  					style="background-color: #bf9000; border: 1px solid #bf9000;color: white; height: 120px;font-size: 12px">
+							<p style="margin: 0px;padding: 0px;text-decoration: underline;">FY-<span id="currentYear"></span></p>
+							<p style="margin: 0px;padding: 0px;">Total Budget</p>
+							<p style="margin: 0px;padding: 0px;" id="totalBudget">555000</p>
+							<p style="margin: 0px;padding: 0px;">Total Revenue Collected</p>
+							<p style="margin: 0px;padding: 0px;" id="totalRevenueCollected"></p>
+
+						</div>
+		  			</div>
+		  		</div>
+			</div>
+			<div class="col-lg-3 col-md-3" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 270px;">
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">Quarterly Revenue Generated(FY-<span id="currentYear1"></span>)</p>
+					</div>
+					<!-- PLACE FOR CHART -->
+					<div id="quaterlyRevenueDunot" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 270px;">
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">Revenue Generation Statistics(FY-<span id="currentYear2"></span>)</p>
+					</div>
+					<!-- PLACE FOR CHART -->
+					<div id="revenueGenerationStatisticsPie" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 270px;" data-toggle="modal" data-target="#modalForPaymentTransaction">
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">Popular Payment Modes(FY-<span id="currentYear3"></span>)</p>
+					</div>
+					<!-- PLACE FOR CHART -->
+					<div id="popularPaymentModesBar" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 650px;">
+					<div class="row" style="font-weight: 600;font-size: 11px;padding: 15px;">
+						<div class="col-sm-4">
+							<select class="form-control input-sm" id="searchBRAnalysisYearInput" style="border-radius: 0px;">
+								<option value="">Please select an Year</option>
+								<option value="2019" selected>2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+							</select>
+							<div class="error"></div>
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-primary" id="searchBRAnalysisByYearBtn" style="height: 29px;font-size: 12px;border-radius: 0px;">
+								Search
+							</button>
+						</div>
+					</div>
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">Budget-Revenue Analysis(FY-<span id="currentYear4"></span>)</p>
+					</div>
+					 <!-- PLACE FOR CHART -->
+					<div id="budgetRevenueAnalysisGroupBar" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 270px;/* background-color: transparent; */" id="top5MDAsStackedBarWell">
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">TOP 5 MDAs</p>
+					</div>
+					<!-- PLACE FOR CHART -->
+					<div id="top5MDAsStackedBar" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 270px;/* background-color: transparent; */">
+					<div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">TOP 5 Banks</p>
+					</div>
+					<!-- PLACE FOR CHART -->
+					<div id="topBankHoregentalBar" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12" style="margin: 0px; padding: 5px;">
+				<div class="well custom-well" style="height: 400px;">
+					<div class="row" style="font-weight: 600;font-size: 11px;padding: 15px;">
+						<div class="col-sm-4">
+							<select class="form-control input-sm" id="revenueCollectionTrendYearInput" style="border-radius: 0px;">
+								<option value="">Please select an Year</option>
+								<option value="2019" selected>2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+							</select>
+							<div class="error"></div>
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-primary" id="searchRevenueCollectionTrendByYearBtn" style="height: 29px;font-size: 12px;border-radius: 0px;">
+								Search
+							</button>
+						</div>
+					</div>
+					 <div class="text-center" style="font-weight: 600;font-size: 11px;">
+						<p style="margin: 0px;padding: 0px;">Revenue Collection Trend</p>
+					</div>
+					 <!-- PLACE FOR CHART -->
+					<div id="revenueCollectionTrendBar" style="z-index: 2;">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MODAL FOR PAYMENT TRANSACTION DETAILS -->
+<div id="modalForPaymentTransaction" class="modal fade" role="dialog">
+	<div class="modal-dialog" style="width: 50%;">
+		<div class="modal-content" style="border-radius:20px;">
+			<div class="modal-header"
+				style="background-color: #03A9F4; padding: 8px; text-align: center;border-radius: 10px;">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+
+				</button>
+				<h5 class="modal-title" id="myModalLabel" style="color: white;">
+					Payment Mode & Transactions Details
+				</h5>
+			</div>
+			<div class="modal-body modal-bg" style="overflow-y: auto;overflow-x:hidden;height:300px;">
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover" style="font-family: sans-serif;font-size: 11px;"  align="center" id="PaymentTransactionsDetailsTable">
+						<thead style="background-color: #03a9f4;color: white;">
+							<tr>
+							  <th>Payment Mode </th>
+							  <th>No of Transactions</th>
+							  <th>Total Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <tr>
+							  <td>Cash</td>
+							  <td>1234</td>
+							  <td>N 2,323,453.23</td>
+							</tr>
+							<tr>
+							  <td>Online</td>
+							  <td>1234</td>
+							  <td>N 2,323,453.23</td>
+							</tr>
+							<tr>
+							  <td>Bank</td>
+							  <td>1234</td>
+							  <td>N 2,323,453.23</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+							<button class="btn btn-primary modal-btn hide" id="addItemUpdateSaveBtn">OK</button>
+							<button class="btn btn-primary modal-btn custom-btn" id="addItemUpdateSaveBtn">Print</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal-footer" style="padding: 8px; text-align: center;border-top: 0px;">
+	      	</div>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/portal/dashboard.js"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#menu-toggle").click(function(e) {
+		    e.preventDefault();
+		    $("#wrapper").toggleClass("active");
+		});
+	</script>
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <title>ONDODASHBOARD | HOME</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <style type="text/css">
+            .dashboard-header{
+                font-size: 20px;
+                color: white;
+                /* font-family: cursive; */
+            }
+
+            .modal{
+                background: rgba(0,0,0,.7);
+            }
+            /* On screens that are 600px wide or less */
+            @media screen and (max-width: 600px) {
+                .dashboard-header {
+                    font-size: 12px;
+                }
+            }
+
+        </style>
+        <link rel="stylesheet" href="css/api/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/api/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/api/bootstrap-datetimepicker.min.css"/>
+        <link rel="stylesheet" href="css/api/jquery-ui.1.11.4.css" />
+        <link rel="stylesheet" href="css/api/bootstrap-dialog.min.css"/>
+        <link rel="stylesheet" href="css/api/dataTables.bootstrap.min.css"/>
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,200'/>
+        <link rel="stylesheet" href="css/api/features-quick-link.css"/>
+        <link rel="stylesheet" href="css/api/font-awesome-animation.min.css"/>
+        <link rel="stylesheet" href="css/api/jquery.growl.css"/>
+
+        <link rel="stylesheet" href="css/api/c3-0.6.7.css"/>
+        <link rel="stylesheet" href="css/api/bootstrap-slider-10.2.0.css"/>
+        <link rel="stylesheet" href="css/custom/custom-select.css"/>
+
+        <script type="text/javascript" src="js/api/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/api/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/api/jquery-ui.1.11.4.js"></script>
+        <script type="text/javascript" src="js/api/bootstrap-dialog.min.js"></script>
+        <script type="text/javascript" src="js/api/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/api/jquery.jeditable.mini.js"></script>
+        <script type="text/javascript" src="js/api/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/api/bootstrap-filestyle.js"></script>
+        <script type="text/javascript" src="js/api/moment.min.js"></script>
+        <script type="text/javascript" src="js/api/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="js/api/jquery.autocomplete.js"></script>
+        <script type="text/javascript" src="js/api/jquery.growl.js"></script>
+        <script type="text/javascript" src="js/api/notification.js"></script>
+        <script type="text/javascript" src="js/api/loadingoverlay.min.js"></script>
+        <script type="text/javascript" src="js/api/loadingoverlay_progress.min.js"></script>
+
+        <script type="text/javascript" src="js/api/d3v5.js"></script>
+        <script type="text/javascript" src="js/api/c3-0.6.7.js"></script>
+        <script type="text/javascript" src="js/api/bootstrap-slider-10.2.0.js"></script>
+        <script type="text/javascript" src="js/portal/commonUtil.js"></script>
+        <script type="text/javascript" src="js/portal/login.js"></script>
+
+
+    </head>
+    <body class="background-class">
+        <div class="container-fluid" style="position: fixed;width: 100%;z-index: 1001;">
+            <div class="row" style="padding: 10px;background-color: #b90d1e;">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5" id="">
+                    <img class="img-responsive" alt="" src="images/ondo-login-logo.png" style="height: 54px; width: 125px;">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 text-center dashboard-header" id="">
+                    <p style="margin: 0px;">EXECUTIVE REPORT MANAGER</p>
+                    <p style="margin: 0px;">STATE OF ONDO</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="wrapper" class="">
+            <!-- ADDING A INCLUDESIDEBAR -->
+
+            <link rel="stylesheet" href="css/custom/includeSideBar.css"/>
+            <div id="sidebar-wrapper" style="position: fixed;top: 76px;z-index: 0;">
+                <ul id="sidebar_menu" class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a id="menu-toggle" href="#" style="padding: 7px 0px 14px 0px;">
+                            <span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-nav" id="sidebar" style="font-size:13px;background-color: #444450;width: 185px;/* font-family: cursive; */">
+                    <li>
+                        <a data-toggle="tooltip" title="Dashboard" class='' href="?key=dashboard">
+                            Dashboard<span class="sub_icon glyphicon glyphicon-dashboard"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Statistics" class='' href="#<!-- ?key=statistics -->" style="cursor: no-drop;">
+                            Statistics<span class="sub_icon glyphicon glyphicon-stats"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Tax Payer" class='active-side-bar' href="?key=taxpayer">
+                            Tax Payer<span class="sub_icon glyphicon glyphicon-user"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Property" class='' href="?key=property">
+                            Property<span class="sub_icon glyphicon glyphicon-home"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Reports" class='' href="#<!-- ?key=reports -->" style="cursor: no-drop;">
+                            Reports<span class="sub_icon glyphicon glyphicon-file"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Help" class='' href="#<!-- ?key=help -->" style="cursor: no-drop;">
+                            Help<span class="sub_icon glyphicon glyphicon-exclamation-sign"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tooltip" title="Logout" href="/dashboard">
+                            Logout<span class="sub_icon glyphicon glyphicon-off"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Page content -->
+            <div id="page-content-wrapper">
+                <!-- Keep all page content within the page-content inset div! -->
+                <div class="page-content inset" style="top: 65px;position: relative;/* z-index: -1; */padding: 10px;">
+                    <div class="container-fluid" style="">
+                        <!-- ADDING A PAGE INSIDE PAGE CONTENT -->
+                        <style>
+                            ::-webkit-input-placeholder {
+                                text-align: center;
+                            }
+
+                            :-moz-placeholder { /* older Firefox*/
+                                text-align: center;
+                            }
+
+                            ::-moz-placeholder { /* Firefox 19+ */
+                                text-align: center;
+                            }
+
+                            :-ms-input-placeholder {
+                                text-align: center;
+                            }
+
+                            .btnDiv {
+                                margin-left: 0px;
+                            }
+
+                            .btn {
+                                border-radius: 0px !important;
+                                border-color: transparent !important;
+                            }
+
+                            .modal-btn {
+                                margin: 22px;
+                                background-color: rgb(0, 201, 172);
+                                width: 100px;
+                            }
+
+                            .modal-btn:hover{
+                                background-color: rgb(68, 90, 111) !important;
+                            }
+
+                            .underline {
+                                border-bottom: 1px solid rgb(0, 201, 172) !important;
+                                text-align: left;
+                            }
+
+                            .btn-lg {
+                                width: 265px;
+                            }
+
+                            table thead tr th{
+                                text-align:center;
+                            }
+
+                            th {
+                                border: 0px !important;
+                            }
+
+                            td {
+                                border: 0px !important;
+                            }
+
+                            .taxpayerTabList li {
+                                /*width: 25%;*/
+                                width: 25%;
+                                margin-bottom: -2px !important;
+                                border-bottom: 2px solid rgb(0, 201, 172) !important;
+                                text-align: center !important;
+                            }
+
+                            .taxpayerTabList li a:hover {
+                                background-color: #a2efcf !important;
+                            }
+
+                            .taxpayerTabList li a {
+                                color: white !important;
+                                border-radius: 0px !important;
+                                margin-right: 0px !important;
+                            }
+
+                            .taxpayerTabList li.active a {
+                                color: white !important;
+                                background-color: rgb(0, 201, 172) !important;
+                                border: 0px !important;
+                                border-bottom: 2px solid rgb(0, 201, 172) !important;
+                            }
+
+                            .modal-bg {
+                                background-image: url('images/Background.jpg');
+                                height: 100%;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                /* background-attachment: fixed;   */
+                                webkit-background-size: cover;
+                                -moz-background-size: cover;
+                                -o-background-size: cover;
+                                background-size: cover;
+                                /* position: absolute; */
+                                width: 100%;
+                            }
+
+                            .custom_label {
+                                margin-top: 10px;
+                                margin-left: 10px;
+                            }
+
+                            .tab-custom-col{
+                                width:245px;
+                                padding-left:70px !important; 
+                            }
+
+                            .dataTables_processing {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                width: 100%;
+                                height: 40px;
+                                margin-left: -50%;
+                                margin-top: -25px;
+                                padding-top: 20px;
+                                text-align: center;
+                                font-size: 1.2em;
+                                background-color: #337ab7;
+                                background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(25%, rgba(255,255,255,0.9)), color-stop(75%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0)));
+                                background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+                                background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+                                background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+                                background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+                                background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+                            }
+
+                            .cust-box-yr{
+                                padding: 18px;
+                                color: #fff;
+                            }
+
+                            .cust-box-sl{
+                                padding: 10px;
+                                color: #fff;
+                            }
+
+                            ul{
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+                            }
+                            #collapse1 li{
+                                padding: 10px;
+                                text-align: center;
+                                padding-right: 80px;
+                            }
+                            .accordion {
+                                background-color: #eee;
+                                color: #444;
+                                transition: 0.4s;
+                            }
+
+                            .accordion:after {
+                                content: '\002B';
+                                color: #777;
+                                font-weight: bold;
+                                float: right;
+                                margin-left: 5px;
+                            }
+
+                            .accordion-active:after {
+                                content: "\2212";
+                            }
+
+                            .accordion-panel {
+                                padding: 0 18px;
+                                background-color: white;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out;
+                            }
+
+                        </style>
+                        <div class="container-fluid">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-8">
+                                    <p  style="font-family: sans-serif; font-weight: 700; font-size: 12px;border: 1px solid #444450; padding: 2px;color:#444450;display: inline-block;">
+                                        Statistics
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <div class="row" id="taxpayerTabPanelContainer">
+                                    <div class="col-md-12">
+                                        <ul class="nav nav-tabs taxpayerTabList" role="tablist" style="background-color: rgb(68, 90, 111);">
+                                            <li role="presentation" class="active">
+                                                <a href="#detailTab" aria-controls="detailTab" role="tab" data-toggle="tab">Budget Vs Revenue</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#property" aria-controls="property" role="tab" data-toggle="tab" id="propertyTab" payerId="">Revenue</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#taxFolder" aria-controls="taxFolder" role="tab" data-toggle="tab" id="taxFoldersTab" payerId="">Banks</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#paymentHistory" aria-controls="paymentHistory" role="tab" data-toggle="tab" id="paymentHistoryTab" payerId="">Other Reports</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="detailTab">
+                                        <div class="row" id="importantDetailsContainer" style="margin-top:25px">
+
+                                            <div class="col-md-6" style="margin-bottom:25px">
+
+                                                <div role="presentation">
+                                                    <div class="col-sm-1 cust-box-yr" style="background-color: #204d74;">
+                                                        FY
+                                                    </div>
+
+                                                    <div class="col-sm-11 cust-box-sl" style="background-color: rgb(21, 160, 134);">
+                                                        <div class="custom-select-list">
+                                                            <select>
+                                                                <option>Select</option>
+                                                                <option value="0">2009</option>
+                                                                <option value="1">2008</option>
+                                                                <option value="2">2007</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="well custom-well">
+
+                                                    left first		     <!-- PLACE FOR CHART -->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="well custom-well">
+                                                            <div class="row">
+                                                                <div class="col-sm-6" >
+                                                                    <div style="padding:20px">
+                                                                        <h5>
+                                                                            Total Summary
+                                                                        </h5>
+                                                                        <p>
+                                                                            Total Budget : N65,989
+                                                                        </p>
+
+                                                                        <p>
+                                                                            Total Collection : N87,655
+                                                                        </p>
+                                                                        <hr>
+
+                                                                        <p>
+                                                                            Arrears
+                                                                        </p>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <!-- PLACE FOR CHART -->
+                                                                    <div id="totalRevenueDunot" style="height: 200px">
+                                                                    </div>
+
+                                                                </div>          	
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <div class="well custom-well">
+                                                            <div class="row">
+                                                                <div class="col-sm-6" >
+                                                                    <div style="padding:20px">
+                                                                        <h5>
+                                                                            Filtered Summary
+                                                                        </h5>
+                                                                        <p>
+                                                                            Total Budget : N788,878
+                                                                        </p>
+
+                                                                        <p>
+                                                                            Total Collection : N876,677
+                                                                        </p>
+                                                                        <hr>
+
+                                                                        <p>
+                                                                            Arrears
+                                                                        </p>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <!-- PLACE FOR CHART -->
+                                                                    <div id="filteredRevenueDunot" style="height: 200px">
+                                                                    </div>
+
+                                                                </div>          	
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <table class="table table-bordered table-hover" id="taxPayerPropertiesDetailTable" style="background-color: #FEFFFE;">
+                                                    <thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+                                                           class="" align="center">
+                                                        <tr>
+                                                            <th>MDAs</th>
+                                                            <th>Budget</th>
+                                                            <th>Revenue Collected</th>
+                                                            <th>Arreas</th>
+                                                            <th>Deviation</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody align="center" style="font-size: 12px; background-color: white;">
+                                                        <tr>
+                                                            <td>Ministry of Information</td>
+                                                            <td>89,0988,09</td>
+                                                            <td>67,987,989</td>
+                                                            <td>23,898,87</td>
+                                                            <td>78%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ministry of Information</td>
+                                                            <td>89,0988,09</td>
+                                                            <td>67,987,989</td>
+                                                            <td>23,898,87</td>
+                                                            <td>78%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ministry of Information</td>
+                                                            <td>89,0988,09</td>
+                                                            <td>67,987,989</td>
+                                                            <td>23,898,87</td>
+                                                            <td>78%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ministry of Information</td>
+                                                            <td>89,0988,09</td>
+                                                            <td>67,987,989</td>
+                                                            <td>23,898,87</td>
+                                                            <td>78%</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="well custom-well">
+                                                    <div class="text-center" style="font-weight: 600;font-size: 11px;">
+                                                        <p style="padding-top: 30px;">Budget-Revenue Analysis(FY-<span id="currentYear4">2018</span>)</p>
+                                                    </div>
+                                                    <!-- PLACE FOR CHART -->
+                                                    <div id="budgetRevenueAnalysisGroupBar" style="z-index: 2;">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <div role="tabpanel" class="tab-pane" id="property">
+                                        <div class="row" style="margin-top:25px">
+                                            <div class="col-md-12">
+                                                <table class="table table-bordered table-hover" id="taxPayerPropertiesDetailTable" style="background-color: #FEFFFE;">
+                                                    <thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+                                                           class="" align="center">
+                                                        <tr>
+                                                            <th>MDA</th>
+                                                            <th>Revenue Collected</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody align="center" style="font-size: 12px; background-color: white;">
+
+                                                        <tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse1">
+                                                            <td>Ministry of Information</td>
+                                                            <td>1988,98,987</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td colspan="1">
+                                                                <ul id="collapse1" class="collapse out">
+                                                                    <li>Details 1</li>
+                                                                </ul>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+
+                                                        <tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse2">
+                                                            <td>Ministry of Foreign Affairs</td>
+                                                            <td>1988,98,987</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td colspan="1">
+                                                                <ul id="collapse2" class="collapse out">
+                                                                    <li>Details 2</li>
+                                                                </ul>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+
+
+                                                        <tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse3">
+                                                            <td>Ministry of Information</td>
+                                                            <td>1988,98,987</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td colspan="1">
+                                                                <ul id="collapse3" class="collapse out">
+                                                                    <li>Details 3</li>
+                                                                </ul>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-offset-2 col-md-8" style="text-align: center;">
+                                                    <button class="btn btn-primary modal-btn"
+                                                            id="addItemUpdateSaveBtn">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="taxFolder">
+                                        <div class="row" style="margin-top:25px">
+                                            <div class="col-md-12">
+                                                <table class="table table-bordered table-hover" id="taxPayerFolderDetailTable" style="background-color: #FEFFFE;">
+                                                    <thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+                                                           class="" align="center">
+                                                        <tr>
+                                                            <th>Folder ID</th>
+                                                            <th>Date Created</th>
+                                                            <th>Type</th>
+                                                            <th>Sub Type</th>
+                                                            <th>Amount Billed</th>
+                                                            <th>Amount Paid</th>
+                                                            <th>Amount Due</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody align="center" style="font-size: 12px; background-color: white;">
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-offset-2 col-md-8" style="text-align: center;">
+                                                    <button class="btn btn-primary modal-btn"
+                                                            id="addItemUpdateSaveBtn">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div role="tabpanel" class="tab-pane" id="paymentHistory">
+                                            <div class="row" style="margin-top:25px">
+                                                    <div class="col-md-12">
+                                                            <table class="table table-bordered table-hover" id="taxPayerPaymentHistoryTable" style="background-color: #FEFFFE;">
+                                                                    <thead style="font-family: sans-serif; font-size: 11px; font-style: normal; background-color: #337ab7; color: white;"
+                                                                            class="" align="center">
+                                                                            <tr>
+                                                                                    <th>Payment Number</th>
+                                                                                    <th>Payment Date</th>
+                                                                                    <th>Payment Mode</th>
+                                                                                    <th>Payment Amount</th>
+                                                                                    <th>Bank</th>
+                                                                                    <th>Receipt Number</th>
+                                                                                    <th>Paid By</th>
+                                                                            </tr>
+                                                                    </thead>
+                                                                    <tbody  align="center" style="font-size: 12px; background-color: white;">
+                                                                    
+                                                                    </tbody>
+                                                            </table>
+                                                    </div>
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-md-12">
+                                                            <div class="col-md-offset-2 col-md-8" style="text-align: center;">
+                                                                    <button class="btn btn-primary modal-btn"
+                                                                            id="addItemUpdateSaveBtn">Close</button>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                            </div> -->
+
+
+
+
+                                </div>
+                            </div>
+
+                            <!-- ADDING RESPECTIVE JS FILES -->
+                            <script type="text/javascript" src="js/portal/statistics.js"></script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <script type="text/javascript">
+$("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+});
+    </script>
+
+
+    <script>
+
+        var x, i, j, selElmnt, a, b, c;
+        x = document.getElementsByClassName("custom-select-list");
+
+        console.log(x);
+
+        for (i = 0; i < x.length; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-custom-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-custom-items select-custom-hide");
+            for (j = 1; j < selElmnt.length; j++) {
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    var y, i, k, s, h;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < s.length; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            for (k = 0; k < y.length; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-custom-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+        function closeAllSelect(elmnt) {
+            var x, y, i, arrNo = [];
+            x = document.getElementsByClassName("select-custom-items");
+            y = document.getElementsByClassName("select-custom-selected");
+            for (i = 0; i < y.length; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < x.length; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-custom-hide");
+                }
+            }
+        }
+        document.addEventListener("click", closeAllSelect);
+    </script>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("accordion-active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</html>
